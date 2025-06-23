@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio Wisata yogyakarta</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: 'Covered By Your Grace', cursive;
+            background-color: #fffaf0; /* warm cream background */
+            color: #2c3e50; /* dark blue gray */
+        }
+        header {
+            background-color: #16424e; /* dark teal/navy alternative */
+            color: #f0f8ff; /* alice blue for text */
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(22, 66, 78, 0.7);
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 3px #0b242a;
+        }
+        header .logo img {
+            width: 50px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px #72a0c1;
+        }
+        nav a {
+            color: #a3c4bc; /* soft moss green */
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+        nav a.active,
+        nav a:hover {
+            color: #d9b310; /* warm golden-yellow accent */
+            text-shadow: 1px 1px 2px #7e6a12;
+        }
+        main {
+            display: flex;
+            padding: 30px 40px;
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto 50px auto;
+        }
+        #content {
+            flex: 3;
+        }
+        article.card {
+            background-color: #fdf6e3;
+            padding: 18px 25px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(24, 43, 65, 0.12);
+            transition: box-shadow 0.3s ease;
+        }
+        article.card:hover {
+            box-shadow: 0 0 25px rgba(217, 179, 16, 0.5);
+        }
+        article h2 {
+            font-size: 1.75rem;
+            color: #326273; /* teal */
+            margin-bottom: 12px;
+            letter-spacing: 1.7px;
+            text-transform: uppercase;
+        }
+        article p {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            letter-spacing: 0.5px;
+            margin-top: 8px;
+        }
+        .image-content {
+            width: 100%;
+            max-height: 320px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(50, 50, 50, 0.1);
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+            cursor: zoom-in;
+        }
+        .image-content:hover {
+            transform: scale(1.02);
+        }
+        aside {
+            flex: 1;
+            background-color: #dcedd2;
+            border-radius: 15px;
+            padding: 25px 30px;
+            box-shadow: 0 0 15px rgba(45, 80, 45, 0.2);
+            color: #2e4f31;
+            font-weight: 700;
+            text-align: center;
+        }
+        aside img.profile-image {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 0 15px #7ca87c;
+            margin-bottom: 20px;
+        }
+        aside h2 {
+            font-weight: 800;
+            font-size: 1.7rem;
+            margin-bottom: 18px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #3a5a40;
+        }
+        aside table {
+            width: 100%;
+            color: #264d26;
+            font-size: 1.05rem;
+            font-weight: 600;
+            border-collapse: collapse;
+        }
+        aside table tr {
+            border-bottom: 1px solid #aacbaa;
+        }
+        aside table td,
+        aside table th {
+            padding: 8px 0;
+            text-align: left;
+        }
+        aside table tr:last-child {
+            border-bottom: none;
+        }
+        footer {
+            background-color: #16424e;
+            color: #f0f8ff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+        @media (max-width: 900px) {
+            main {
+                flex-direction: column;
+                padding: 15px 20px;
+            }
+            aside {
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSiqVtwkCbY2cSBtCTXPnuk6AQhaGFySqGjg&s" alt="Logo Wisata">
+            Wisata yogyakarta 
+        </div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Gallery</a>
+        </nav>
+    </header>
+    <main>
+        <div id="content">
+            <article id="Candi Borobudur" class="card">
+                <h2>Candi Borobudur</h2>
+                <img
+                    src="https://www.smsperkasa.com/_next/image?url=https%3A%2F%2Fcpanel-blog.smsperkasa.com%2Fwp-content%2Fuploads%2F2023%2F09%2FSejarah-candi-borobudur.png&w=3840&q=75"
+                    alt="Candi Borobudur"
+                    class="image-content"
+                />
+                <p>
+                    Candi Borobudur adalah candi Buddha terbesar di dunia yang terletak di Magelang, Jawa Tengah. Dibangun pada abad ke-8 oleh Dinasti Syailendra, candi ini merupakan situs warisan dunia UNESCO yang terkenal. Borobudur memiliki arsitektur yang unik, terdiri dari tiga tingkatan yang melambangkan alam semesta dalam kosmologi Buddha: Kamadhatu, Rupadhatu, dan Arupadhatu. 
+                </p>
+            </article>
+            <article id="pantai" class="card">
+                <h2>Pantai parangtritis</h2>
+                <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/c8/69/76/this-outcropping-makes.jpg?w=1400&h=800&s=1"
+                    alt="Pantai Parangtritis"
+                    class="image-content"
+                />
+                <p>
+                    antai Parangtritis adalah pantai terkenal yang terletak di Kretek, Bantul, Yogyakarta, sekitar 27 km selatan Yogyakarta. Pantai ini dikenal dengan pasir hitamnya, pemandangan matahari terbenam yang indah, dan legenda Ratu Pantai Selatan, Nyi Roro Kidul. Pengunjung dapat menikmati berbagai aktivitas seperti naik bendi, ATV, atau sekadar bersantai menikmati pemandangan. 
+                </p>
+            </article>
+            <article id="Candi " class="card">
+                <h2>Candi Prambanan</h2>
+                <img
+                    src="https://www.suwatu.id/wp-content/uploads/2021/06/CANDI-01-PRAMBANAN.jpg"
+                    alt="Candi Prambanan"
+                    class="image-content"
+                />
+                <p>
+                    Candi Prambanan adalah salah satu monumen Hindu terbesar dan paling megah di dunia. Dikenal sebagai simbol kejayaan arsitektur dan seni budaya dari masa lalu, Candi Prambanan memiliki sejarah yang kaya dan mendalam yang tercermin dalam setiap batu dan reliefnya.
+                </p>
+            </article>
+            <article id="goa" class="card">
+                <h2>Goa pindul</h2>
+                <img
+                    src="https://homestaydijogja.net/wp-content/uploads/2024/07/Goa-Pindul-Jogja-2.jpg"
+                    alt="Goa pindul"
+                    class="image-content"
+                />
+                <p>
+                     Gua Pindul dikenal karena cara menyusuri gua yang dilakukan dengan menaiki ban pelampung di atas aliran sungai bawah tanah di dalam gua, kegiatan ini dikenal dengan istilah cave tubing.
+                </p>
+            </article>
+            <article id="Heha Sky View" class="card">
+                <h2>Heha Sky View</h2>
+                <img
+                    src="https://nagantour.com/wp-content/uploads/2023/06/Pemandangan-Yogyakarta-dari-Ketinggian.webp"
+                    alt="Heha Sky View"
+                    class="image-content"
+                />
+                <p>
+                    HeHa Sky View menyuguhkan panorama alam yang menakjubkan. Dari ketinggian, pengunjung dapat melihat hamparan perbukitan hijau, birunya laut selatan, dan gagahnya Gunung Merapi. Pemandangan ini semakin indah saat matahari terbenam, menciptakan momen romantis yang tak terlupakan.
+                </p>
+            </article>
+            <article id="Merapi Tour" class="card">
+                <h2>Merapi Tour</h2>
+                <img
+                    src="https://admin.tvrijakartanews.com/uploads/IMG_20241228_101547_436027300a.jpg"
+                    alt="Merapi Tour"
+                    class="image-content"
+                />
+                <p>
+                    Wisata Lava Tour Gunung Merapi kembali menjadi primadona di musim libur Natal dan Tahun Baru (Nataru) 2024. Destinasi wisata yang menawarkan pengalaman menjelajahi kawasan bekas erupsi Gunung Merapi dengan mobil jeep ini mengalami lonjakan pengunjung hingga melibatkan sekitar 1.000 unit jeep per hari.
+                </p>
+            </article>
+        </div>
+        <aside>
+            <article class="profile card">
+                <img
+                    src="blob:https://web.whatsapp.com/a27b8b5d-1233-4711-880a-ac46ad2c9afb"
+                    alt="Foto Agustien Eka"
+                    class="profile-image"
+                />
+                <h2>Informasi Pribadi</h2>
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>: Agustien Eka</td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>: Yogyakarta</td>
+                    </tr>
+                    <tr>
+                        <td>Domisili</td>
+                        <td>: Tangerang Selatan</td>
+                    </tr>
+                    <tr>
+                        <td>Pekerjaan</td>
+                        <td>: Mahasiswi</td>
+                    </tr>
+                </table>
+            </article>
+        </aside>
+    </main>
+    <footer>
+        &copy; 2024 Portofolio Wisata Yogyakarta - All rights reserved
+    </footer>
+    <script>
+        // Basic JS to add zoom modal for images (optional)
+        const images = document.querySelectorAll('.image-content');
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                const modal = document.createElement('div');
+                modal.style.position = 'fixed';
+                modal.style.top = '0';
+                modal.style.left = '0';
+                modal.style.width = '100vw';
+                modal.style.height = '100vh';
+                modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
+                modal.style.display = 'flex';
+                modal.style.justifyContent = 'center';
+                modal.style.alignItems = 'center';
+                modal.style.cursor = 'zoom-out';
+                modal.style.zIndex = '10000';
+
+                const largeImg = document.createElement('img');
+                largeImg.src = img.src;
+                largeImg.style.maxWidth = '90%';
+                largeImg.style.maxHeight = '90%';
+                largeImg.style.borderRadius = '15px';
+                largeImg.style.boxShadow = '0 0 20px white';
+
+                modal.appendChild(largeImg);
+                document.body.appendChild(modal);
+
+                modal.addEventListener('click', () => {
+                    document.body.removeChild(modal);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
